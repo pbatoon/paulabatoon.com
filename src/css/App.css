@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: #454348;
+  color: white;
+}
+
+body {
+  background: #ffcdb2;
+}
+
+.nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  font-size: 2em;
+}
+
+
+.home-textbox {
+  float: right;
+  background-color: #e5a493;
+  margin-top: 5%;
+  margin-right: 3%;
+  width: 95%;
+  height: 50%;
+  color: white;
+  display: flex;
+  overflow-y: auto;
+  font-family: 'Roboto Mono';
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+}
+
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+   } 
+} 
+
+.social-textbox {
+  background-color: #B5838D;
+  color: white;
+  width: 25vw;
+  margin-top: 1vw;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 3%;
+  margin-left: 40%;
+  text-align: center;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+}
+
+i {
+  font-size: 4em;
+  color: white;
+}
+
+.home--textbox-text {
+  display: inline-block;
+  margin-left: 2vw;
+  width: 60%;
+  @media (max-width: 620px) {
+    width: 100%;
+  }
+}
+
+.home--textbox-text h1 {
+  font-size: 7em;
+  white-space: pre-line;
+}
+
+.facts-header {
+  margin-top: 1%;
+}
+
+.facts-list {
+  list-style-type: circle;
+  font-size: 1em;
+}
+
+.facts-list li {
+  margin: 10px 0;
+}
+
+.profile-pic {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 1vw;
+  margin-left: 1vw;
+  margin-bottom: 1vw;
+}
+
+.resume-container {
+  margin-left: 33%;
+  margin-right: 40%;
+  padding-top: 2vh;
+  animation: fadeInAnimation ease 1.2s;
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+}
+
+.download-button {
+  margin-bottom: 1vh;
+  margin-left: 50%;
+  margin-right: 50%;
+  background-color: #B5838D;
+  padding: 15px 23px;
+  font-size: 16px;
+  border: none;
+  color: white;
+  font-family: 'Rubik';
+}
+
+.resume-container i {
+  font-size: 1em;
+}
